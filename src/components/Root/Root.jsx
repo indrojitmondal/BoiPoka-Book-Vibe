@@ -1,9 +1,14 @@
 import React from 'react';
+import Navbar from '../Navbar/Navbar';
+import { Outlet } from 'react-router-dom';
+import Footer from '../Footer/Footer';
 
 const Root = () => {
     return (
         <div>
-            <h1 className='text-xl text-fuchsia-600'>Welcome to the BoiPoka-Book-Vibe</h1>
+            <Navbar></Navbar>
+            <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     );
 };
